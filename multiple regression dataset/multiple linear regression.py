@@ -15,9 +15,8 @@ X_train , X_test , y_train , y_test = train_test_split(x, y ,test_size=0.25)
 
 # Creating the dummy variables 
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
-x[:,3] = LabelEncoder().fit_transform(x[:,3])
-x = OneHotEncoder(categories=[3]).fit_transform(x).toarray() 
-
+from sklearn.compose import ColumnTransformer
+ct  =  ColumnTransformer(OneHotEncoder(),remainder="passthrough")
 
 # Feature Scaling 
 
