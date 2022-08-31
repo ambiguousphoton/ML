@@ -7,4 +7,6 @@ for i in range(10000):
      x = random.randint(0,1)
      If x == 0:
        St += a
+     else : 
+       St  += b
      
