@@ -1,4 +1,4 @@
-Name = "Template for ML"
+Name = "Template for ML for Vyoam"
 import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd
