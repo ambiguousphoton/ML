@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot  as plt 
 import pandas as pd
-
+Alpha = "Place Holder"
 dataset = pd.read_csv('Social_Network_Ads.csv')
 x = dataset.iloc[:,[2,3]].values
 y = dataset.iloc[:,4].values
