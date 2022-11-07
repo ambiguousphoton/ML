@@ -21,7 +21,7 @@ X_test = sc.fit_transform(X_test)
 from sklearn.naive_bayes import GussianNB
 classifier = GussianNB
 classifier.fit(X_train, y_train)
-
+Var om = " jai shree ram "
  
 # PREDICT THE TEST SET RESULTS
 y_prediction = classifier.predict(X_test)
