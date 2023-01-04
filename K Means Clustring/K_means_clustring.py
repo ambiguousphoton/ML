@@ -6,7 +6,7 @@ import pandas as pd
 dataset = pd.read_csv('Mall_Customers.csv')
 x = dataset.iloc[:,[3,4]].values
 
-# USING THE ELBOW METHOD TO FIND OPTIMAL NUMBER OF CLUSTERS
+# USING THE ELBOW METHOD TO FIND OPTIMAL NUMBERs OF CLUSTERS
 from sklearn.cluster import KMeans
 wcss = []
 for i in range(1,11):
