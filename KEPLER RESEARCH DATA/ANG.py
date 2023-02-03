@@ -18,7 +18,7 @@ from sklearn.metrics import mean_squared_error, precision_score, confusion_matri
 pd.set_option('display.max_columns', None)
 
 # Import dataset
-df = pd.read_csv('C:/Users/microsoft/Desktop/#/python programs/ML/OM/LINEAR REGRESSION/dataset.csv')
+df = pd.read_csv('C:/Users/microsoft/Desktop/#/python programs/ML/OM/KEPLER RESEARCH DATA/dataset.csv')
 
 # Print the shape of the dataset
 print(df.shape)

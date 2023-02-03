@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset = pd.read_csv('C:/Users/microsoft/Desktop/#/python programs/ML/OM/LINEAR REGRESSION/dataset.csv')
-x = dataset.iloc[:, [26]].values
-y = dataset.iloc[:, [49]].values
+dataset = pd.read_csv("C:/Users/microsoft/Desktop/#/python programs/ML/OM/KEPLER RESEARCH DATA/dataset.csv")
+x = dataset.iloc[:, [26,24,19,11,41,17]].values
+y = dataset.iloc[:, [44]].values
 
 
 from sklearn.impute import SimpleImputer 
@@ -29,8 +29,8 @@ regressor = RandomForestRegressor(n_estimators=10)
 regressor.fit(X_train, y_train)
 
 # visualising tree regressor
-x_grid = np.arange(min(x), max(x), 0.01)
-x_grid = x_grid.reshape((len(x_grid),1))
+# x_grid = np.arange(min(x), max(x), 0.01)
+# x_grid = x_grid.reshape((len(x_grid),1))
 
 plt.scatter(X_train, y_train, color = 'red')
 plt.plot(x_grid, regressor.predict(x_grid), color='blue')
@@ -45,3 +45,11 @@ plt.title('Random forest Prediction (test)')
 plt.ylabel("PLANETS RADIUS")
 plt.xlabel("SUNS RADIUS")
 plt.show()
+
+
+prediction = regressor.predict(X_test)
+from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
+print(mean_absolute_error(y_test,prediction))
+print(mean_squared_error(y_test,prediction))
+print(np.sqrt(mean_squared_error(y_test,prediction)))
+print(r2_score(y_test,prediction))
