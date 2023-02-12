@@ -1,4 +1,4 @@
-# K MEANS CLUSTRING 
+# K MEANS CLUSTRING algo
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
