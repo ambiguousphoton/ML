@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Import dataset
 dataset = pd.read_csv("startups.csv")
 x = dataset.iloc[:,:-1].values
-NAME = "VYOAM"
+NAME = "VYOAM ji"
 y = dataset.iloc[:,4].values
 
 # Creating the dummy variables 
